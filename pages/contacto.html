@@ -5,40 +5,82 @@
     <link rel="icon" href="../01.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="C:\Users\Usuario\OneDrive\Escritorio\1.png">
+    <link rel="icon" href="../images/1.png">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
     <title>flexivida</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <a href="../index.html">Inicio</a>
-        </ul>     
+    <header class="header"> 
+        <h2 class="header__tittle">Flexivida</h1>
+    </header>
+    <nav class="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Incio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactos.html">Contactos</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
     </nav>
-    <main>
-        <h1>Contacto</h1>
-        <form action="" method="post">
-            <label for="">Nombre</label>
-            <input type="text">
-            <br>
-            <label for="apellido">Apellido</label>
-            <input type="text">
-            <br>
-            <label for="Email">Correo electronico</label>
-            <input type="email">
-            <br>
-            <label for="Telefono">Telefono</label>
-            <input type="number">
-            <br>
-            <label for="mensaje">Mensaje</label>
-            <br>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar">
+    <main class="grid-container">
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h2 class="header__tittle2">Contacto</h2>
+            </div>
+            <div class="col-md-4">
+                <form action="" method="post">
+                    <div class="mb-3">
+                        <label for="">Nombre</label>
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" placeholder="Apellido">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Email">Correo electronico</label>
+                        <input type="email" placeholder="name@example.com">>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Telefono">Telefono</label>
+                        <input type="number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje">Mensaje</label>
+                    </div>
+                    <div class="mb-3">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-success" type="submit">Enviar</button>
+                    </div>
+            </div>
+        <div>
     </main>
-    <footer>
-        <p>Creditos - Terminos y condiciones 
+    <footer class="footer">
+        <p class="footer__text">Creditos - Terminos y condiciones 
+         <ul class="footer__social">
+             <li>
+                 <a href="https://es-la.facebook.com/">Facebook</a>
+             </li>
+             <li>
+                 <a href="https://twitter.com/?lang=es">Twitter</a>
+             </li>
+             <li>
+                 <a href="https://www.instagram.com/?hl=es-la">Instagram</a>
+             </li>
+         </ul>
      </footer>
     
 </body>
