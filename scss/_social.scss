@@ -1,0 +1,24 @@
+.social {
+    background-color: orange;
+    width: 50px;
+    position: absolute;
+    top: $header_alto + 20;
+    right: 20px;
+    ul {
+        list-style: none;
+        padding: irem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        li {
+            a {
+                color: $dark_text
+                text-decoration: none;
+                font-size: 1,5rem;
+            } &:hover {
+                transform: scale(1.4);
+            }
+        }
+    }
+}

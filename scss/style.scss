@@ -1,5 +1,9 @@
-@import "_header";
-@import "_footer";
+@import "header";
+@import "footer";
+@import "variables";
+@import "generales";
+@import "social";
+
 *{
     margin: 0;
     padding: 0;
